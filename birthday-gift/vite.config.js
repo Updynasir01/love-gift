@@ -12,5 +12,12 @@ export default defineConfig({
         presets: ['@babel/preset-react']
       }
     })
-  ]
+  ],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: true,
+  },
+  base: './'
 })
